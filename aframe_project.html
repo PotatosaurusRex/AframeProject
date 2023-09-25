@@ -6,8 +6,38 @@
     <a-scene>
       <!-- <a-image src="image2.png" position=" 0.025 1.472 -5.006" scale="2.628 2.628 2.628" width="4" height="6"></a-image> -->
       <a-camera position="0 1 10"> </a-camera>
-      <!-- <a-entity camera look-controls position="0 1.6 10"></a-entity> -->
-      <!-- <a-sphere position="0 5 -5" radius="1.85" color="#166484"></a-sphere> -->
+      
+      <!-- biggest sphere @ the top of scene -->
+      <a-sphere radius="3" position="-0.025 6 -5" color="#166484" animation="attribute: scale; "></a-sphere>
+
+      <!-- medium sphere in the middle of the scene -->
+      <a-sphere radius="2.1" position="0 -0.640 -5" color="#909f9d"> 
+        <a-ring radius-inner="2.1" radius-outer="2.3" side="double" color="white"> </a-ring>
+      </a-sphere>
+
+      <!-- smallest sphere -->
+
+      <a-sphere radius=".75" position="-2.295 1.543 -5" color="#363533"> 
+        <a-ring radius-inner=".75" radius-outer=".9" side="double" color="white"> </a-ring>
+      </a-sphere>
+
+      <!-- Boxes at the bottom of the scene -->
+      
+      <a-box width="8" height=".5" depth="8" position="0 -4 -5" color="#383235"> </a-box>
+      <a-box width="8" height="1" depth="8" position="0 -5 -5" color="#e96328"> </a-box>
+      <a-box width="8" height=".5" depth="8" position="0 -6 -5" color="#1d657a"> </a-box>
+
+      <a-sky color="orange"></a-sky>
+
+
+
+
+
+      
+      <!-- Old entity based version 
+
+      <a-entity camera look-controls position="0 1.6 10"></a-entity>
+      
       <a-entity geometry="primitive: sphere; radius: 3" material="color: #166484" position="-0.025 6 -5"></a-entity>
 
       <a-entity geometry="primitive: sphere; radius: 2.1" position="0 -0.640 -5" material="color: #909f9d">
@@ -21,8 +51,8 @@
       <a-entity geometry="primitive: box; width: 8; height: .5; depth: 8" material="color: #383235" position="0 -4 -5"></a-entity>
       <a-entity geometry="primitive: box; width: 8; height: 1; depth: 8" material="color: #e96328" position="0 -5 -5"></a-entity>
       <a-entity geometry="primitive: box; width: 8; height: .5; depth: 8" material="color: #1d657a" position="0 -6 -5"></a-entity>
+      -->
 
-      <a-sky color="orange"></a-sky>
     </a-scene>
   </body>
 </html>
