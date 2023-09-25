@@ -4,21 +4,23 @@
   </head>
   <body>
     <a-scene>
-      <a-entity camera look-controls position="0 1.6 10"></a-entity>
+      <!-- <a-image src="image2.png" position=" 0.025 1.472 -5.006" scale="2.628 2.628 2.628" width="4" height="6"></a-image> -->
+      <a-camera position="0 1 10"> </a-camera>
+      <!-- <a-entity camera look-controls position="0 1.6 10"></a-entity> -->
       <!-- <a-sphere position="0 5 -5" radius="1.85" color="#166484"></a-sphere> -->
-      <a-entity geometry="primitive: sphere; radius: 2.4" material="color: #166484" position="0 6 -5"></a-entity>
+      <a-entity geometry="primitive: sphere; radius: 3" material="color: #166484" position="-0.025 6 -5"></a-entity>
 
-      <a-entity geometry="primitive: sphere; radius: 1.5" position="0 1.25 -5" material="color: #909f9d">
-        <a-entity geometry="primitive: ring; radius-inner: 1.5; radius-outer: 1.6" material="color: white"></a-entity>
+      <a-entity geometry="primitive: sphere; radius: 2.1" position="0 -0.640 -5" material="color: #909f9d">
+        <a-entity geometry="primitive: ring; radius-inner: 2.1; radius-outer: 2.25" material="color: white"></a-entity>
       </a-entity>
 
-      <a-entity geometry="primitive: sphere; radius: .5" position="-2 2.5 -5" material="color: #363533">
-        <a-entity geometry="primitive: ring; radius-inner: .5; radius-outer: .6" material="color: white"></a-entity>
+      <a-entity geometry="primitive: sphere; radius: .75" position="-2.295 1.543 -5" material="color: #363533">
+        <a-entity geometry="primitive: ring; radius-inner: .75; radius-outer: .9" material="color: white"></a-entity>
       </a-entity>
 
-      <a-entity geometry="primitive: box; width: 10; height: .5; depth: 3" material="color: #383235" position="0 -4 -5"></a-entity>
-      <a-entity geometry="primitive: box; width: 10; height: 1; depth: 3" material="color: #e96328" position="0 -4.5 -5"></a-entity>
-      <a-entity geometry="primitive: box; width: 10; height: .5; depth: 3" material="color: #1d657a" position="0 -5.5 -5"></a-entity>
+      <a-entity geometry="primitive: box; width: 8; height: .5; depth: 8" material="color: #383235" position="0 -4 -5"></a-entity>
+      <a-entity geometry="primitive: box; width: 8; height: 1; depth: 8" material="color: #e96328" position="0 -5 -5"></a-entity>
+      <a-entity geometry="primitive: box; width: 8; height: .5; depth: 8" material="color: #1d657a" position="0 -6 -5"></a-entity>
 
       <a-sky color="orange"></a-sky>
     </a-scene>
