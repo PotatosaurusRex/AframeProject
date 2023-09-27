@@ -16,12 +16,14 @@
 
       <!-- medium sphere in the middle of the scene -->
       <a-sphere radius="2.1" position="0 -0.640 -5" color="#909f9d" rotation="0 0 -43.313"> 
-        <a-ring radius-inner="2.1" radius-outer="2.3" side="double" color="white"> </a-ring>
+        <a-ring radius-inner="2.1" radius-outer="2.3" side="double" color="white" 
+        animation="property: rotation; to: 400 -360 0; loop: true; dir: alternate; easing: easeInQuad; dur:50000"> </a-ring>
         
         <!-- entity for orbit animation -->
         <a-entity animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur:10000"> 
           <!-- smallest sphere -->
-          <a-sphere radius=".75" position="-3.25 0 0" color="#363533">
+          <a-sphere radius=".75" position="-3.25 0 0" color="#363533" 
+          animation="property: rotation; to: 360 360 0; loop: true; easing: linear; dur:17000">
           <!-- would go inside a-sphere above, 
             adds roatation animaition to the smallest sphere thats orbiting the middle sphere
             animation="property: rotation; to: 360 0 0; loop: true; dur:6000"  -->
