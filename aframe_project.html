@@ -9,8 +9,8 @@
       
 
       <!-- biggest sphere @ the top of scene -->
-      <a-sphere radius="3" position="-0.025 6 -5" color="#166484"
-      animation="property: scale; to: 1.05 1.05 1.05; dir: alternate; loop: true; easing: easeInOutQuad; dur:2000">
+      <a-sphere radius="2" position="-0.025 6 -5" color="#166484"
+      animation="property: scale; to: 1.6 1.6 1.6; dir: alternate; loop: true; easing: easeInOutQuad; dur:2000">
       </a-sphere>
 
 
@@ -36,15 +36,15 @@
 
       <!-- Boxes at the bottom of the scene -->
       <a-box width="8" height=".5" depth="8" color="#383235" position="-4 -4 -5"
-        animation="property: opacity; from: 0; to: 1.0; dur: 1000; easing: easeInOutCubic;"
+        animation="property: opacity; from: 0; to: 1.0; dur: 1000; dir: alternate; loop: true; easing: linear;"
         animation__1="property: position; to: 0 -4 -5; dur: 1000; easing: easeInOutElastic;">
       </a-box>
       <a-box width="8" height="1" depth="8" position="5 -5 -5" color="#e96328"
         animation="property: position; to: 0 -5 -5; dur: 1000; easing: easeInOutElastic"
-        animation__1="property: opacity; from: 0; to: 1.0; dur: 1000; easing: easeInOutCubic">
+        animation__1="property: opacity; from: 0; to: 1.0; dur: 1100; dir: alternate; loop: true; easing: linear">
       </a-box>
       <a-box width="8" height=".5" depth="8" position="-5 -6 -5" color="#1d657a"
-        animation="property: opacity; from: 0; to: 1.0; dur: 1000; easing: easeInOutCubic"
+        animation="property: opacity; from: 0; to: 1.0; dur: 1200; dir: alternate; loop: true; easing: linear"
         animation__1="property: position; to: 0 -6 -5; dur: 1000; easing: easeInOutElastic"> </a-box>
       <a-sky color="orange"></a-sky>
 
